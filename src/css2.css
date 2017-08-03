@@ -1,0 +1,62 @@
+div.float_top{
+    position:absolute;
+    float: left;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f2f3f8;
+    z-index: 10;
+}
+
+div.float_right{
+    position: absolute;
+    float: right;
+    top:2em;
+    right: 6em;
+    width: 16em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    background-color:#cccccc;
+    border-top: 1em;
+    border-top-color: #aaaaaa;
+    border-bottom: 1em;
+    border-bottom-color: #999999;
+    border-radius: 10px;
+    transition: height 1s;
+
+}
+
+div.float_right div#city , div.float_right div#content{
+    text-align: center;
+}
+
+div#city{
+    font-size: 1.3em;
+}
+
+div#content{
+    margin-top: 0.3em;
+    font-size: 1em;
+}
+
+div.page_header{
+    font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+    font-size: 2em;
+    text-align: center;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+div.other{
+    position: relative;
+    width: 880px;
+    margin-top: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+}
+
+div.other fieldset{
+    width: 38.2%;
+}

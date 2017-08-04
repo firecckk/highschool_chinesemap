@@ -1,3 +1,41 @@
+div.float_menu{
+    border-radius: 1em;
+    position: absolute;
+    float: right;
+    top:1em;
+    left: 1em;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+}
+
+
+div.float_menu div.menu_button{
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-image: url(button.png);
+    transition-property:width,height,transform,background,font-size,opacity;
+	transition-duration:1s,1s,1s,1s,1s,1s;
+    opacity:0.5;
+}
+
+
+div.float_menu div.menu_button:hover
+	{
+	transform: rotate(180deg);
+    opacity:1;
+	}
+
+div.float_menu div.menu_content{
+    display: none;
+    border-radius: 1em;
+    padding: 1em;
+    font-size: 0.5em;
+    background-color: #dddddd;
+}
+
+
 div.float_top{
     position:absolute;
     float: left;
@@ -13,7 +51,7 @@ div.float_right{
     position: absolute;
     float: right;
     top:2em;
-    right: 6em;
+    right: 1.5em;
     width: 16em;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
@@ -38,6 +76,7 @@ div#city{
 div#content{
     margin-top: 0.3em;
     font-size: 1em;
+    display: none;
 }
 
 div.page_header{

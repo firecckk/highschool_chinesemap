@@ -55,14 +55,105 @@
             </div>
 
         </div>
-        
-            <div class="other">
-                <fieldset>
-                    <legend>其他</legend>
-                    <div onclick="Choose('foreign')"><a>Foreign Country</a></div>
-                    <div onclick="Choose('weizhi')"><a>暂时未知</a></div>
-                </fieldset>
+
+        <div class="other">
+            <fieldset>
+                <legend>其他</legend>
+                <div onclick="Choose('foreign')"><a>Foreign Country</a></div>
+                <div onclick="Choose('weizhi')"><a>暂时未知</a></div>
+            </fieldset>
+        </div>
+
+        <div class="float_menu">
+            <div class="menu_button"></div>
+            <div class="menu_content">
+                <table>
+                    <tr><td>江苏</td></tr>
+                    <tr>
+                        <td>童寅</td>
+                    </tr>
+                    <tr>
+                        <td>李远扬</td>
+                    </tr>
+                    <tr>
+                        <td>吕立元</td>
+                    </tr>
+                    <tr>
+                        <td>郭思远</td>
+                    </tr>
+                    <tr>
+                        <td>刘雄伟</td>
+                    </tr>
+                    <tr>
+                        <td>陶文旭</td>
+                    </tr>
+                    <tr>
+                        <td>许珉瑞</td>
+                    </tr>
+                    <tr>
+                        <td>陈权</td>
+                    </tr>
+                    <tr>
+                        <td>余博高</td>
+                    </tr>
+                    <tr>
+                        <td>张银炜</td>
+                    </tr>
+                    <tr>
+                        <td>周佳琪</td>
+                    </tr>
+                    <tr>
+                        <td>陈天</td>
+                    </tr>
+                    <tr>
+                        <td>苍宏伟</td>
+                    </tr>
+                    <tr>
+                        <td>赵钱</td>
+                    </tr>
+                    <tr>
+                        <td>邵星宇</td>
+                    </tr>
+                    <tr>
+                        <td>汪士稹</td>
+                    </tr>
+                    <tr>
+                        <td>杨天翼</td>
+                    </tr>
+                    <tr>
+                        <td>王熠</td>
+                    </tr>
+                    <tr>
+                        <td>沈梦青</td>
+                    </tr>
+                    <tr>
+                        <td>谢金秀</td>
+                    </tr>
+                    <tr>
+                        <td>邓亚婷</td>
+                    </tr>
+                    <tr>
+                        <td>艾雨洁</td>
+                    </tr>
+                    <tr>
+                        <td>张邵彤</td>
+                    </tr>
+                    <tr>
+                        <td>潘轩</td>
+                    </tr>
+                    <tr>
+                        <td>周雨萱</td>
+                    </tr>
+                    <tr>
+                        <td>张雨绮</td>
+                    </tr>
+                    <tr><td><br></td></tr>
+                    <tr><td>王瑞</td><td>浙江</td></tr><tr><td>杨宇轩</td><td>重庆</td></tr><tr><td>薛志伟</td><td>重庆</td></tr><tr><td>陆沈涵</td><td>福建</td></tr><tr><td>王文斌</td><td>云南</td></tr><tr><td>鲍天龙</td><td>上海</td></tr><tr><td>王馨语</td><td>湖南</td></tr><tr><td>左云扬</td><td>河南</td></tr><tr><td>许恒嘉</td></tr>
+                    <tr><td>蒋轩举</td><td>新西兰</td></tr>
+                    <tr><td>程琨</td><td>加拿大</td></tr>
+                </table>
             </div>
+        </div>
 
     </div>
     <div class="float_top">
@@ -76,6 +167,11 @@
     <script>
         $(document).ready(function () {
             $("div.float_top").fadeOut(2000);
+
+            $("div.float_menu").click(function () {
+                $("div.menu_content").slideToggle("slow");
+            });
+
         });
 
 
@@ -113,56 +209,76 @@
             switch (name) {
                 case "jiangsu": {
                     $("div#city").html("江苏");
+                    $("div#content").slideUp("fast");
                     $("div#content").html('童寅<br>李远扬<br>吕立元<br>郭思远<br>刘雄伟<br>陶文旭<br>许珉瑞<br>陈权<br>余博高<br>张银炜<br>周佳琪<br>陈天<br>苍宏伟<br>赵钱<br>邵星宇<br>汪士稹<br>杨天翼<br>王熠<br>沈梦青<br>谢金秀<br>邓亚婷<br>艾雨洁<br>张邵彤<br>潘轩<br>周雨萱<br>张雨绮<br>');
-                }break;
+                    $("div#content").slideDown("fast");
+                } break;
 
                 case "zhejiang": {
                     $("div#city").html("浙江");
+                    $("div#content").slideUp("fast");
                     $("div#content").html('王瑞<br>');
+                    $("div#content").slideDown("fast");
                 } break;
 
                 case "chongqing": {
                     $("div#city").html("重庆");
+                    $("div#content").slideUp("fast");
                     $("div#content").html('杨宇轩<br>薛志伟<br>');
+                    $("div#content").slideDown("fast");
                 } break;
 
                 case "fujian": {
                     $("div#city").html("福建");
+                    $("div#content").slideUp("fast");
                     $("div#content").html('陆沈涵<br>');
+                    $("div#content").slideDown("fast");
                 } break;
 
                 case "yunnan": {
                     $("div#city").html("云南");
+                    $("div#content").slideUp("fast");
                     $("div#content").html('王文斌<br>');
+                    $("div#content").slideDown("fast");
                 } break;
 
                 case "shanghai": {
                     $("div#city").html("上海");
+                    $("div#content").slideUp("fast");
                     $("div#content").html('鲍天龙<br>');
+                    $("div#content").slideDown("fast");
 
                 } break;
 
                 case "henan": {
                     $("div#city").html("河南");
+                    $("div#content").slideUp("fast");
                     $("div#content").html('左云扬<br>');
+                    $("div#content").slideDown("fast");
 
                 } break;
 
-                case "hunan":{
+                case "hunan": {
                     $("div#city").html("湖南");
+                    $("div#content").slideUp("fast");
                     $("div#content").html('王馨语<br>');
+                    $("div#content").slideDown("fast");
 
-                }break;
+                } break;
 
                 case "weizhi": {
                     $("div#city").html("未知");
+                    $("div#content").slideUp("fast");
                     $("div#content").html('许恒嘉<br>');
+                    $("div#content").slideDown("fast");
 
                 } break;
 
                 case "foreign": {
                     $("div#city").html("Foreign Country");
+                    $("div#content").slideUp("fast");
                     $("div#content").html('New Zealand 蒋轩举<br>Canada 程琨');
+                    $("div#content").slideDown("fast");
 
                 } break;
             }
